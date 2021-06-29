@@ -42,6 +42,7 @@ module Extension
     end
 
     def app
+      validate_env_present
       Models::App.new(api_key: env["api_key"], secret: env["secret"])
     end
 
@@ -96,7 +97,15 @@ module Extension
     end
 
     def property_present?(key)
+      validate_env_present
       !env[key].nil? && !env[key].strip.empty?
+    end
+
+    def validate_env_present
+      unless env
+        Kernel.puts("Missing .env file. Run `shopify extension connect` to generate an .env file.")
+        exit
+      end
     end
 
     def integer?(value)
