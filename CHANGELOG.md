@@ -1,6 +1,7 @@
 Unreleased
 ------
 * [1305](https://github.com/Shopify/shopify-cli/pull/1305): Fix `Uninitialized constant Net::WriteTimeout` error
+* [1322](https://github.com/Shopify/shopify-cli/pull/1322): Fix error when running `shopify theme language-server --help`
 
 Version 2.0.1
 -------------
