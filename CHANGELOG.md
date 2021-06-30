@@ -1,5 +1,6 @@
 Unreleased
 ------
+* [#1319](https://github.com/Shopify/shopify-cli/pull/1319): Fix `theme pull` not pulling some files
 
 Version 2.0.1
 -------------
