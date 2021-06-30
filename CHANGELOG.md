@@ -1,6 +1,7 @@
 Unreleased
 ------
 * [1305](https://github.com/Shopify/shopify-cli/pull/1305): Fix `Uninitialized constant Net::WriteTimeout` error
+* [1321](https://github.com/Shopify/shopify-cli/pull/1321): Fix error when pulling images with `theme pull`
 
 Version 2.0.1
 -------------
